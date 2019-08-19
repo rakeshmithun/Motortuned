@@ -4,11 +4,11 @@ body
 }
 .container 
 {
-    padding-right: 15px;
+    padding: 80px 120px;
 }
 .container-fluid
 {
-    padding-right: 15px;
+    padding: 80px 120px;
 }
 h1 
 {
@@ -31,19 +31,19 @@ h2
     padding-right: 20px;
     padding-top: -15px;
 }
-.headerbox
-{
-    background-color: black;
-    
-
+.grid { 
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 1;
+    grid-template-areas: 
+    "s1 s2"
 }
-.row
-{
-    padding-right: 15px;
-    background-color: grey;
+.s1 { 
+    grid-area: s1;
+    width: 50%;
 }
-.navbar-header
-{
-
-    
+.s2 { 
+    grid-area: s2;
+    width: 50%;
+    text-align: right;
 }
