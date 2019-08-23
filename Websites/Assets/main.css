@@ -1,58 +1,99 @@
-body 
-{
+body {
     background-color: #000000;
 }
-.container 
-{
-    padding: 80px 120px;
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 0px;
 }
-.container-fluid
-{
-    padding: 80px 120px;
+
+.container.bannerleft {
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-grow: inherit;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    flex-basis: 20%;
+    margin-left: 5px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    position: left;
 }
-h1 
-{
+
+.container.bannerright {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    flex-basis: 75%;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+}
+
+.container.bannerright.top {
+    align-content: flex-end;
+}
+
+.container.bannerright.bottom {
+    align-content: flex-start;
+    margin-top: 0px;
+}
+
+@media screen and (min-width: 900px) {
+    .container {
+        display: flex;
+        align-content: center;
+        max-width: 1292px;
+    }
+}
+
+hr {
+    width: 1292px;
+    height: 1px;
+    margin-left: auto;
+    margin-right: auto;
     color: white;
-    text-align: right;
-    padding-right: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
 }
-h1 span
-{
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: none;
+}
+
+img.mainimage {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+img.logo {
+    margin-left: 0px;
+}
+
+h1 {
+    color: white;
+    display: flex;
+    align-content: flex-end;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 350%;
+}
+
+h1 span {
     color: red;
-    text-align: right;
-    padding-right: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%
+    display: flex;
+    align-content: flex-end;
 }
-h2 
-{
+
+h2 {
     color: white;
-    text-align: right;
-    padding-right: 20px;
-    padding-top: -15px;
+    display: flex;
+    align-content: flex-end;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 80%;
-}
-.grid { 
-    display: grid;
-    grid-template-columns: 2;
-    grid-template-rows: 1;
-    grid-template-areas: 
-    "s1 s2"
-}
-.s1 { 
-    grid-area: s1;
-    width: 50%;
-    align-content: left;
-}
-.s2 { 
-    grid-area: s2;
-    width: 90%;
-    align-content: right;
-}
-col
-{
-    width: 50%;
-    align-content: right;
+    font-size: 150%;
+    font-weight: auto;
 }
