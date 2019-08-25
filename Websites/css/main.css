@@ -3,6 +3,10 @@ body {
     padding: 5px;
 }
 
+a {
+    margin-left: 0.25em;
+}
+
 a:link {
     color: dimgray;
     text-decoration: none;
