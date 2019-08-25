@@ -54,7 +54,7 @@ p {
     justify-content: center;
 }
 
-.container.bannerleft {
+#bannerleft {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -64,7 +64,7 @@ p {
     margin: 0px 0px 0px 0px;
 }
 
-.container.bannerright {
+.bannerright {
     flex-wrap: wrap;
     flex-basis: 75%;
     margin-top: 0px;
@@ -72,13 +72,13 @@ p {
     margin-right: 0px;
 }
 
-.container.bannerright.top {
-    margin-top: 0px;
-}
-
-.container.bannerright.bottom {
+.bottom {
     justify-content: flex-end;
     align-content: center;
+}
+
+#top {
+    margin-top: 0px;
 }
 
 .showcontainer {
